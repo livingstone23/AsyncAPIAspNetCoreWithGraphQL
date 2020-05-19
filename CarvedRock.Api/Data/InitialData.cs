@@ -18,6 +18,7 @@ namespace CarvedRock.Api.Data
                     Description = "Use these sturdy shoes to pass any mountain range with ease.",
                     Price = 219.5m,
                     Rating = 4,
+
                     Type = ProductType.Boots,
                     Stock = 12,
                     PhotoFileName = "shutterstock_66842440.jpg",
