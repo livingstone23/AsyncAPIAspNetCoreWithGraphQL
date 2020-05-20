@@ -28,5 +28,12 @@ namespace CarvedRock.Api.Repositories
             return reviews.ToLookup(r => r.ProductId);
         }
 
+        public async Task<ProductReview> AddReview(ProductReview review)
+        {
+            _dbContext.ProductReviews.Add(review);
+            await _dbContext.SaveChangesAsync();
+            return review;
+        }
+
     }
 }
